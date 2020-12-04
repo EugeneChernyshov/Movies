@@ -2,28 +2,27 @@
 //  FavouriteDetailsViewController.swift
 //  Movies
 //
-//  Created by apple on 02.12.2020.
-//
+//  Created by Evgeniy Chernyshov on 01/12/2020.
+//  Copyright © 2020 Evgeniy Chernyshov. All rights reserved.
+//  Swift 5
 
 import UIKit
 
 class FavouriteDetailsViewController: UIViewController {
 
+    @IBOutlet var favouriteDetailsFilmName: UILabel!
+    
+    @IBOutlet var filmGenre: UILabel!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setTitleFavourites(movie: Films) {
+        favouriteDetailsFilmName.text = movie.filmTitle
     }
-    */
-
+    func setGenreDetail(genre: Genres) {
+        filmGenre.text = genre.name
+    }
 }

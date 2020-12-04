@@ -2,8 +2,9 @@
 //  Networking.swift
 //  Movies
 //
-//  Created by apple on 02.12.2020.
-//
+//  Created by Evgeniy Chernyshov on 01/12/2020.
+//  Copyright © 2020 Evgeniy Chernyshov. All rights reserved.
+//  Swift 5
 import Foundation
 import Alamofire
 
@@ -13,8 +14,6 @@ class Networking {
     
     private var baseURL = "https://api.themoviedb.org/3"
  
-
-   
     func getAllMovies(value: String, completion: (([Films]) -> Void)?) {
         AF.request(self.baseURL + value, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil).response
         { (responseData) in

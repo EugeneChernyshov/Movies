@@ -2,8 +2,9 @@
 //  TabBar.swift
 //  Movies
 //
-//  Created by apple on 28.11.2020.
-//
+//  Created by Evgeniy Chernyshov on 01/12/2020.
+//  Copyright © 2020 Evgeniy Chernyshov. All rights reserved.
+//  Swift 5
 
 import UIKit
 
